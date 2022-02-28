@@ -18,31 +18,31 @@ body,
 html {
   background-color: $bgColor1;
   font-family: "Gideon Roman", cursive;
-}
 
-a,
-li {
-  list-style: none;
-  text-decoration: none;
-  color: $textColor;
-}
+  a,
+  li {
+    list-style: none;
+    text-decoration: none;
+    color: $textColor;
+  }
 
-h1 {
-  font-size: $mainTitle;
-}
+  h1 {
+    font-size: $mainTitle;
+  }
 
-h2 {
-  font-size: $mainTitle;
-}
+  h2 {
+    font-size: $mainTitle;
+  }
 
-h3 {
-  font-size: $subTitle;
-  font-weight: bold;
-  line-height: 40px;
-}
+  h3 {
+    font-size: $subTitle;
+    font-weight: bold;
+    line-height: 40px;
+  }
 
-p {
-  font-size: $textSize;
+  p {
+    font-size: $textSize;
+  }
 }
 
 /* -------- HEADER --------*/
