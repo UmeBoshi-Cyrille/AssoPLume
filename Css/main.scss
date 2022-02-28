@@ -35,18 +35,11 @@ section {
   height: 200px;
 }
 
-p.proverbe {
-  font-size: $subTitle;
-  font-weight: bold;
-  text-align: center;
-}
-
 // <--------------- end Sharing SECTION --------------------->
 
 // <--------------- SECTION About--------------------->
 
 section.about {
-  text-align: center;
   margin-top: 150px;
   margin-bottom: 50px;
 
@@ -58,12 +51,6 @@ section.about {
 
   h3 {
     margin-bottom: 10px;
-    text-align: center;
-    font-weight: bold;
-  }
-
-  span {
-    font-weight: bold;
   }
 }
 
@@ -74,7 +61,6 @@ section.about {
   article {
     width: 90%;
     max-width: 500px;
-    line-height: 20px;
   }
 
   div.iconBox {
@@ -82,16 +68,10 @@ section.about {
     justify-content: center;
   }
 
-  .p2 {
-    text-align: center;
-    line-height: 40px;
-  }
-
   .p3 {
     margin-left: auto;
     margin-right: auto;
     width: 70%;
-    text-align: left;
   }
 
   div.p3 p {
