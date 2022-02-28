@@ -44,6 +44,11 @@ html {
   p {
     font-size: $textSize;
   }
+
+  img.arrow-orientation {
+    width: 30px;
+    height: 30px;
+  }
 }
 
 /* -------- HEADER --------*/
@@ -60,6 +65,7 @@ main {
 }
 
 // - banner - //
+
 .inner-banner {
   p {
     line-height: 50px;

@@ -14,9 +14,9 @@ $textColor2: #eeedde;
 
 // <--------------- Banner --------------------->
 
-.banner {
-  margin: auto;
-  padding: auto;
+section.banner {
+  position: relative;
+  padding-top: 150px;
   width: 90%;
   display: flex;
   flex-direction: column;
@@ -24,7 +24,7 @@ $textColor2: #eeedde;
   z-index: 0;
   border-bottom: 1px solid $bgColor4;
 
-  img {
+  img.ban {
     width: 100%;
     height: 80%;
     transform: rotate(-10deg);

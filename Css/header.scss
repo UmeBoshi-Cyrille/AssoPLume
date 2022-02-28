@@ -11,13 +11,16 @@ $textColor2: #eeedde;
 // <--------------- HEADER --------------------->
 
 header {
-  display: flex;
   position: relative;
+  display: flex;
   height: 50px;
-  margin: auto;
-  margin-bottom: 100px;
+  margin: 0 auto;
   padding: auto;
   border-bottom: 1px solid $bgColor4;
+
+  div.icon-anchor {
+    margin-left: 20px;
+  }
 }
 
 // <--------------- End HEADER --------------------->

@@ -29,8 +29,10 @@
 <body>
     <!-- header -->
     <header class="container-fluid header">
-        <h1>Accueil</h1>
-        <img src="./img/" alt="">
+        <h1 id="header">Accueil</h1>
+        <div class="icon-anchor">
+            <a href="#plume"><img class="arrow-orientation" src="./icons/south.png" alt="south-arrow"></a>
+        </div>
         <br>
         <input type="checkbox" id="menu">
         <label for="menu" class="iconNav">
@@ -51,14 +53,13 @@
     <!-- end header -->
 
     <main>
-
         <!-- banner -->
         <section class="container-fluid banner">
             <div class="ban">
-                <img src="./img/plume.png" alt="Bannière">
+                <img class="ban" src="./img/plume.png" alt="Bannière">
             </div>
             <div class="inner-banner">
-                <h2>La <strong>Plume</strong></h2>
+                <h2 id="plume">La <strong>Plume</strong></h2>
                 <p> L'association des Proverbes </p>
             </div>
         </section>
@@ -66,11 +67,14 @@
 
         <!-- About -->
         <section class="container-fluid about">
+            <div class="icon-anchor2">
+                <a href="#robin"><img class="arrow-orientation" src="./icons/south.png" alt="south-arrow"></a>
+            </div>
             <div class="container">
                 <div class="row aboutInfo">
                     <article class="col-md-4 col-lg-4 col-xs-12 col-sm-12">
                         <div class="iconBox">
-                            <a href="#"><img class="iconImg" src="./img/robin.png" alt="Robin Bird"></a>
+                            <img class="iconImg" src="./img/robin.png" alt="Robin Bird" id="robin">
                         </div>
                         <div>
                             <h3 class="about-title"> Qui sommes nous ? </h3>
@@ -98,13 +102,22 @@
                             </p>
                         </div>
                         <br>
+                        <div class="icon-anchor3">
+                            <a href="#invitation"><img class="arrow-orientation" src="./icons/south.png"
+                                    alt="south-arrow"></a>
+                        </div>
                         <div class="imgBox">
                             <img class="imgDecoration" src="./img/nest2.png" alt="Dessin d'un nids">
                         </div>
+                        <hr>
                     </article>
                     <article class="col-md-4 col-lg-4 col-xs-12 col-sm-12">
-                        <div class="iconBox">
-                            <a href="#"><img class="iconImg2" src="./img/greenColibri.png" alt="Green-Colibri"></a>
+                        <div class="imgBox">
+                            <img class="iconImg" src="./img/greenColibri.png" alt="Green-Colibri" id="invitation">
+                            <div class="icon-anchor4">
+                                <a href="#gallerie"><img class="arrow-orientation" src="./icons/south.png"
+                                        alt="south-arrow"></a>
+                            </div>
                         </div>
                         <div>
                             <h3 class="about-title"> ... Invitation ... </h3>
@@ -131,9 +144,6 @@
                                     à mettre en pratique dans leur vie, dans le but de l'améliorer.
                                 </p>
                             </div>
-                            <div>
-                                <img src="./img/" alt="">
-                            </div>
                         </div>
                     </article>
                 </div>
@@ -143,7 +153,7 @@
 
         <!-- Carousel -->
         <section class="carousel">
-            <h2>Visitez notre gallerie</h2>
+            <h2 id="gallerie">Visitez notre gallerie</h2>
 
             <input type="radio" id="inp01Alpha" name="inp" checked="checked">
             <input type="radio" id="inp02Alpha" name="inp">
@@ -176,6 +186,11 @@
                 <li class="bg04"><span>Un peu d'histoire</span></li>
                 <li class="bg05"><span>Education</span></li>
             </ul>
+
+            <div class="icon-anchor5">
+                <a href="#header"><img class="arrow-orientation" src="./icons/north.png" alt="south-arrow"
+                        id="header"></a>
+            </div>
         </section>
         <!-- end Carousel -->
     </main>

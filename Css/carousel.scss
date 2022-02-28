@@ -12,11 +12,12 @@ $textColor2: #eeedde;
 
 // <--------------- SECTION Carousel--------------------->
 section.carousel {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 50px;
+  padding-bottom: 100px;
   height: 500px;
   text-align: center;
   border-top: 1px solid $bgColor4;
