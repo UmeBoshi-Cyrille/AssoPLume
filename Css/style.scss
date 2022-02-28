@@ -1,0 +1,58 @@
+// Utilities
+$titleKingSize: 5em;
+$mainTitle: 2em;
+$title: 2em;
+$subTitle: 1.5em;
+$textSize: 0.9em;
+// Color
+$bgColor1: #eeedde;
+$bgColor2: #e0ddaa;
+$bgColor3: #203239;
+$bgColor4: #141e27;
+
+$textColor: #203239;
+$textColor2: #eeedde;
+// End color
+
+body,
+html {
+  background-color: $bgColor1;
+  font-family: "Gideon Roman", cursive;
+}
+
+a,
+li {
+  list-style: none;
+  text-decoration: none;
+  color: $textColor;
+}
+
+h1 {
+  font-size: $mainTitle;
+}
+
+h2 {
+  font-size: $mainTitle;
+}
+
+h3 {
+  font-size: $subTitle;
+  font-weight: bold;
+  line-height: 40px;
+}
+
+p {
+  font-size: $textSize;
+}
+
+/* -------- HEADER --------*/
+
+/* -------- end HEADER --------*/
+
+/* -------- MAIN --------*/
+
+/* -------- end MAIN --------*/
+
+/* -------- FOOTER --------*/
+
+/* -------- end FOOTER --------*/
