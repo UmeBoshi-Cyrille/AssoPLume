@@ -1,5 +1,5 @@
-# Ignoring sass file
-.css 
-.css.map
+*.txt
+*.css 
+*.css.map
 !bootstrap.min.css
 !reset.css
