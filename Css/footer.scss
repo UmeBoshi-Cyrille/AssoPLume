@@ -1,0 +1,55 @@
+// Utilities
+$mainTitle: 2em;
+$title: 2em;
+$subTitle: 1.2em;
+$textSize: 1em;
+
+// Color
+$bgColor1: #eeedde;
+$bgColor2: #e0ddaa;
+$bgColor3: #203239;
+$bgColor4: #141e27;
+
+$textColor: #203239;
+$textColor2: #eeedde;
+// End color
+
+// <--------------- Sharing SECTION --------------------->
+
+footer {
+  position: relative;
+  height: 24em;
+  border-top: 1px solid $bgColor4;
+  text-align: center;
+}
+
+// <--------------- end Sharing SECTION --------------------->
+
+footer {
+  margin-bottom: 20px;
+
+  div {
+    display: inline-block;
+    padding: 10px;
+    max-width: 100%;
+  }
+
+  img {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+  }
+
+  ul {
+    line-height: 25px;
+  }
+
+  span {
+    text-align: center;
+  }
+
+  a:hover {
+    color: $bgColor3;
+    border-bottom: 1px solid $bgColor4;
+  }
+}
