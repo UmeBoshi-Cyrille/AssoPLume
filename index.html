@@ -10,10 +10,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gideon+Roman&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
     <!-- css -->
-    <link rel="stylesheet" href="./Css/bootstrap.min.css">>
-    <link rel="stylesheet" href="./Css/reset.css">
+    <link rel="stylesheet" href="./utils/bootstrap.min.css">>
+    <link rel="stylesheet" href="./utils/reset.css">
     <link rel="stylesheet" href="./Css/style.css">
+    <link rel="stylesheet" href="./Css/header.css">
+    <link rel="stylesheet" href="./Css/banner.css">
+    <link rel="stylesheet" href="./Css/main.css">
+    <link rel="stylesheet" href="./Css/carousel.css">
+    <link rel="stylesheet" href="./Css/footer.css">
 
     <title>Proverbes</title>
 </head>
@@ -21,28 +29,36 @@
 <body>
     <!-- header -->
     <header class="container-fluid header">
-        <div class="container">
-            <h1>La Plume</h1>
-            <a href="#" class="logo">Logo</a>
-        </div>
-        <nav class="menu">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Gallerie</a>
-            <a href="#">Contact</a>
+        <h1>Accueil</h1>
+        <br>
+        <input type="checkbox" id="menu">
+        <label for="menu" class="iconNav">
+            <div class="menu"></div>
+        </label>
+        <nav>
+            <ul>
+                <hr>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">Gallerie</a></li>
+                <li><a href="#">Escales</a></li>
+                <li><a href="#">à propos</a></li>
+                <li><a href="#">Attributions</a></li>
+                <hr>
+            </ul>
         </nav>
     </header>
     <!-- end header -->
 
     <main>
+
         <!-- banner -->
         <section class="container-fluid banner">
             <div class="ban">
-                <img src="" alt="Bannière">
+                <img src="./img/plume.png" alt="Bannière">
             </div>
             <div class="inner-banner">
-                <h2> Les proverbes et la langue des sages </h2>
-                <button class="btn btn-custom"> petite porte </button>
+                <h2>La <strong>Plume</strong></h2>
+                <p> L'association des Proverbes </p>
             </div>
         </section>
         <!-- end banner -->
@@ -50,62 +66,155 @@
         <!-- About -->
         <section class="container-fluid about">
             <div class="container">
-                <div class="row">
+                <div class="row aboutInfo">
                     <article class="col-md-4 col-lg-4 col-xs-12 col-sm-12">
-                        <h2> Présentation </h2>
-                        <p></p>
+                        <div class="iconBox">
+                            <a href="#"><img class="iconImg" src="./img/robin.png" alt="Robin Bird"></a>
+                        </div>
+                        <div>
+                            <h3 class="about-title"> Qui sommes nous ? </h3>
+                            <hr>
+                            <br>
+                            <p class="proverbe"><strong>"Ne recherchez pas seulement votre propre intérêt,
+                                    mais aussi celui de l'autre."</strong>
+                            </p>
+                            <br>
+                        </div>
+                        <div>
+                            <p>En se basant sur ce principe,
+                                l'association "<strong><em><span>la Plume</span></em></strong>" réunit des
+                                dizaines de personnes ordinaires à travers le pays, dans le but d'échanger
+                                sur la sagesse utile dans notre <strong>quotidien</strong>.
+                            </p>
+                        </div>
+                        <br>
+                        <div class="p2">
+                            <p>
+                                En gros... <br>
+                                Des gens simples.<br>
+                                En clair... <br>
+                                ... de la <strong>convivialité</strong>.
+                            </p>
+                        </div>
+                        <br>
+                        <div class="imgBox">
+                            <img class="imgDecoration" src="./img/nest2.png" alt="Dessin d'un nids">
+                        </div>
+                    </article>
+                    <article class="col-md-4 col-lg-4 col-xs-12 col-sm-12">
+                        <div class="iconBox">
+                            <a href="#"><img class="iconImg2" src="./img/greenColibri.png" alt="Green-Colibri"></a>
+                        </div>
+                        <div>
+                            <h3 class="about-title"> ... Invitation ... </h3>
+                            <hr>
+                            <br>
+                        </div>
+                        <div class="p3">
+                            <div class="p">
+                                <p>
+                                    - Venez échanger sur les conseils que nous prodigue les
+                                    <strong><em><span>proverbes d'antan</span></em></strong>.
+                                </p>
+                                <br>
+                                <p>
+                                    - Pas des belles paroles pour se faire caresser l'oreille !
+                                </p>
+                                <br>
+                                <div class="imgBox">
+                                    <img class="iconImg" src="./img/listen.png"
+                                        alt="Dessin d'un homme qui tend l'oreille">
+                                </div>
+                                <p>
+                                    - Mais des gens sincères, en quêtes de <strong>sages conseils</strong>
+                                    à mettre en pratique dans leur vie, dans le but de l'améliorer.
+                                </p>
+                            </div>
+                            <div>
+                                <img src="./img/" alt="">
+                            </div>
+                        </div>
                     </article>
                 </div>
             </div>
         </section>
         <!-- end About -->
 
-        <section class="container-fluid histoire">
-            <div class="container">
-                <div class="row">
-                    <article class="col-md-4 col-lg-4 col-xs-12 col-sm-12">
-                        <h2> Un peu d'histoire </h2>
-                        <p></p>
-                    </article>
-                </div>
-                <article class="col-md-3 col-lg-3 col-xs-12 col-sm-12 item">
+        <!-- Carousel -->
+        <section class="carousel">
+            <h2>Visitez notre gallerie</h2>
 
-                </article>
-                <article class="col-md-3 col-lg-3 col-xs-12 col-sm-12 item">
+            <input type="radio" id="inp01Alpha" name="inp" checked="checked">
+            <input type="radio" id="inp02Alpha" name="inp">
+            <input type="radio" id="inp03Alpha" name="inp">
+            <input type="radio" id="inp04Alpha" name="inp">
+            <input type="radio" id="inp05Alpha" name="inp">
+            <input type="radio" id="inp06Alpha" name="inp">
+            <input type="radio" id="inp07Alpha" name="inp">
+            <input type="radio" id="inp08Alpha" name="inp">
+            <input type="radio" id="inp09Alpha" name="inp">
+            <input type="radio" id="inp10Alpha" name="inp">
 
-                </article>
-                <article class="col-md-3 col-lg-3 col-xs-12 col-sm-12 item">
-
-                </article>
-                <article class="col-md-3 col-lg-3 col-xs-12 col-sm-12 item">
-
-                </article>
+            <div class="lbls">
+                <label class="lbl01 labelProxima fas fa-arrow-right" for="inp01Alpha"></label>
+                <label class="lbl02 labelProxima fas fa-arrow-right" for="inp02Alpha"></label>
+                <label class="lbl03 labelProxima fas fa-arrow-right" for="inp03Alpha"></label>
+                <label class="lbl04 labelProxima fas fa-arrow-right" for="inp04Alpha"></label>
+                <label class="lbl05 labelProxima fas fa-arrow-right" for="inp05Alpha"></label>
+                <label class="lbl01 labelAnterior fas fa-arrow-left" for="inp06Alpha"></label>
+                <label class="lbl02 labelAnterior fas fa-arrow-left" for="inp07Alpha"></label>
+                <label class="lbl03 labelAnterior fas fa-arrow-left" for="inp08Alpha"></label>
+                <label class="lbl04 labelAnterior fas fa-arrow-left" for="inp09Alpha"></label>
+                <label class="lbl05 labelAnterior fas fa-arrow-left" for="inp10Alpha"></label>
             </div>
+
+            <ul class="bgs">
+                <li class="bg01"><a href="#"></a> <span>Grandir</span></li>
+                <li class="bg02"><span>Se réunir</span></li>
+                <li class="bg03"><span>Nous Contacter</span></li>
+                <li class="bg04"><span>Un peu d'histoire</span></li>
+                <li class="bg05"><span>Education</span></li>
+            </ul>
         </section>
+        <!-- end Carousel -->
     </main>
 
     <footer class="container-fluid footer">
-        <div class="container">
-            <div class="row">
-                <div class="span6">
-                    <form>
-                        <div class="controls controls-row">
-                            <input id="name" name="name" type="text" class="span3" placeholder="Name">
-                            <input id="email" name="email" type="email" class="span3" placeholder="Email address">
-                        </div>
-                        <div class="controls">
-                            <textarea id="message" name="message" class="span6" placeholder="Your Message"
-                                rows="5"></textarea>
-                        </div>
-
-                        <div class="controls">
-                            <button id="contact-submit" type="submit"
-                                class="btn btn-primary input-medium pull-right">Send</button>
-                        </div>
-                    </form>
+        <nav>
+            <div>
+                <hr>
+                <div>
+                    <img src="./img/icons8-feather-60.png" alt="">
+                    <h4>Site</h4>
                 </div>
+                <hr>
+                <ul>
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#">Gallerie</a></li>
+                    <li><a href="#">Escapade</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Incription</a></li>
+                </ul>
             </div>
-        </div>
+            <div>
+                <hr>
+                <div>
+                    <img src="./img/icons8-livres-100.png" alt="">
+                    <h4>Proverbes</h4>
+                </div>
+                <hr>
+                <ul>
+                    <li><a href="#">Couple</a></li>
+                    <li><a href="#">Famille</a></li>
+                    <li><a href="#">Enfants</a></li>
+                    <li><a href="#">Amitié</a></li>
+                    <li><a href="#">Emploi</a></li>
+                </ul>
+            </div>
+            <br>
+        </nav>
+        <hr>
+        <span>Copyright 2022 - tous droits réservés.</span>
     </footer>
 
 

@@ -1,0 +1,41 @@
+// Utilities
+$mainTitle: 2em;
+$title: 1.5em;
+
+// Color
+$bgColor1: #eeedde;
+$bgColor2: #e0ddaa;
+$bgColor3: #203239;
+$bgColor4: #141e27;
+
+$textColor: #203239;
+$textColor2: #eeedde;
+// End color
+
+// <--------------- Banner --------------------->
+
+.banner {
+  margin: auto;
+  padding: auto;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 0;
+  border-bottom: 1px solid $bgColor4;
+
+  img {
+    width: 100%;
+    height: 80%;
+    transform: rotate(-10deg);
+  }
+}
+
+.inner-banner {
+  margin-bottom: 50px;
+
+  p {
+    line-height: 50px;
+    font-size: 1.5em;
+  }
+}
