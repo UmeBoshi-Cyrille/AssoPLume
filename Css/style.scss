@@ -1,5 +1,6 @@
 // Utilities
 $titleKingSize: 5em;
+$titleMediumSize: 3em;
 $mainTitle: 2em;
 $title: 2em;
 $subTitle: 1.5em;
@@ -31,6 +32,18 @@ html {
     font-size: $mainTitle;
   }
 
+  @media (min-width: 700px) {
+    h1 {
+      font-size: $titleMediumSize;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    h1 {
+      font-size: $titleKingSize;
+    }
+  }
+
   h2 {
     font-size: $mainTitle;
   }
@@ -48,6 +61,13 @@ html {
   img.arrow-orientation {
     width: 30px;
     height: 30px;
+  }
+
+  @media (min-width: 1200px) {
+    img.arrow-orientation {
+      width: 40px;
+      height: 40px;
+    }
   }
 }
 

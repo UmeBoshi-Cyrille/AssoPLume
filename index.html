@@ -30,8 +30,11 @@
     <!-- header -->
     <header class="container-fluid header">
         <h1 id="header">Accueil</h1>
+        <div class="img-anchor">
+            <a href="#"><img class="arrow-feather" src="./img/plume.png" alt="Bannière"></a>
+        </div>
         <div class="icon-anchor">
-            <a href="#plume"><img class="arrow-orientation" src="./icons/south.png" alt="south-arrow"></a>
+            <a href="#plume"><img class="arrow-orientation header-arrow" src="./icons/south.png" alt="south-arrow"></a>
         </div>
         <br>
         <input type="checkbox" id="menu">
@@ -55,6 +58,31 @@
     <main>
         <!-- banner -->
         <section class="container-fluid banner">
+            <div class="carousel">
+                <div id="carouselInterval" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="10000">
+                            <img src="..." class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="..." class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="..." class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselInterval"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselInterval"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
             <div class="ban">
                 <img class="ban" src="./img/plume.png" alt="Bannière">
             </div>
@@ -230,6 +258,11 @@
         <hr>
         <span>Copyright 2022 - tous droits réservés.</span>
     </footer>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 
 
 </body>

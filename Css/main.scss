@@ -52,6 +52,7 @@ main {
     position: absolute;
     right: auto;
     left: auto;
+    margin-top: 75px;
     bottom: 10px;
     width: 30px;
     height: 30px;
@@ -124,3 +125,17 @@ section.about {
 }
 
 // <--------------- end SECTION About--------------------->
+
+/*<--------------- SCREEN MEDIUM SIZE ---------------------> */
+
+@media (min-width: 700px) {
+}
+
+//<--------------- end SCREEN MEDIUM SIZE ---------------------> //
+
+// <--------------- SCREEN BIG SIZE --------------------->
+
+@media (min-width: 1200px) {
+}
+
+// <--------------- end SCREEN BIG SIZE --------------------->
