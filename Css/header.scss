@@ -24,6 +24,11 @@ header {
   div.img-anchor {
     display: none;
   }
+
+  .mainTitle {
+    display: flex;
+    padding-top: 10px;
+  }
 }
 // <--------------- End HEADER --------------------->
 
@@ -243,7 +248,7 @@ header nav {
     }
 
     li:hover {
-      width: 90px;
+      width: 110px;
     }
   }
 }
