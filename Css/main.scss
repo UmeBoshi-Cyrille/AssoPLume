@@ -1,17 +1,8 @@
-// Utilities
-$mainTitle: 2em;
-$title: 2em;
-$subTitle: 1.2em;
-$textSize: 1em;
-
 // Color
 $bgColor1: #eeedde;
 $bgColor2: #e0ddaa;
 $bgColor3: #203239;
 $bgColor4: #141e27;
-
-$textColor: #203239;
-$textColor2: #eeedde;
 // End color
 
 // <--------------- Sharing SECTION --------------------->
@@ -23,10 +14,12 @@ main {
   div.icon-anchor2 {
     position: absolute;
     top: 10px;
+    right: 50%;
+    left: 49%;
     width: 30px;
     height: 30px;
-    right: 50%;
-    left: 48%;
+    margin-top: 20px;
+    z-index: 1;
   }
 
   div.icon-anchor3 {
@@ -34,15 +27,14 @@ main {
     width: 30px;
     height: 30px;
     right: 50%;
-    left: 48%;
+    left: 47%;
     z-index: 1;
   }
 
   div.icon-anchor4 {
-    position: absolute;
-    right: auto;
-    left: auto;
-    bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
     width: 30px;
     height: 30px;
     z-index: 1;
@@ -64,11 +56,6 @@ section {
   display: flex;
 }
 
-.iconImg {
-  width: 200px;
-  height: 200px;
-}
-
 // <--------------- end Sharing SECTION --------------------->
 
 // <--------------- SECTION About--------------------->
@@ -78,19 +65,19 @@ section.about {
   padding-top: 150px;
   margin-bottom: 50px;
 
-  h2.about-title {
+  .about-title {
     margin: 10px 0px 10px 0px;
     padding-bottom: 10px;
-    border-bottom: 2px solid $bgColor4;
   }
 
-  h3 {
-    margin-bottom: 10px;
+  h3.about-title2 {
+    margin-top: 20px;
+    margin-bottom: 21px;
   }
 }
 
-.aboutInfo {
-  display: flex;
+div.aboutInfo {
+  // display: wrap;
   justify-content: center;
 
   article {
@@ -116,12 +103,22 @@ section.about {
     position: relative;
     display: flex;
     justify-content: center;
-    padding: 50px 0px 30px 0px;
+    padding: 0px 0px 0px 0px;
   }
 
   .imgDecoration {
     width: 100%;
   }
+}
+
+.iconImg {
+  width: 200px;
+  height: 200px;
+}
+
+.text-img {
+  width: 200px;
+  height: 200px;
 }
 
 // <--------------- end SECTION About--------------------->
@@ -136,6 +133,62 @@ section.about {
 // <--------------- SCREEN BIG SIZE --------------------->
 
 @media (min-width: 1200px) {
+  .about {
+    padding-bottom: 100px;
+  }
+
+  .about-article,
+  .invitation-article {
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-radius: 20%;
+  }
+
+  .about-article:hover {
+    transform: scale(1.1);
+    background-color: $bgColor1;
+    box-shadow: 1px 1px 6px $bgColor4;
+    z-index: 1;
+  }
+
+  .invitation-article:hover {
+    transform: scale(1.1);
+    background-color: $bgColor1;
+    box-shadow: 1px 1px 6px $bgColor4;
+    z-index: 1;
+  }
+
+  hr.under-nest {
+    display: none;
+  }
+
+  .aboutInfo {
+    justify-content: space-between;
+  }
+
+  div.p3 p {
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+
+  .iconImg {
+    margin-top: 50px;
+  }
+
+  .text-img {
+    width: 200px;
+    height: 300px;
+    margin-bottom: 50px;
+    transition: ease-in-out 0.5s;
+  }
+
+  .text-img:hover {
+    transform: translate(50px);
+  }
+
+  div.icon-anchor3 {
+    display: none;
+  }
 }
 
 // <--------------- end SCREEN BIG SIZE --------------------->

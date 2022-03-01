@@ -1,21 +1,14 @@
-// Utilities
-$mainTitle: 2em;
-$title: 1.5em;
-
 // Color
 $bgColor1: #eeedde;
 $bgColor2: #e0ddaa;
 $bgColor3: #203239;
 $bgColor4: #141e27;
-
-$textColor: #203239;
-$textColor2: #eeedde;
 // End color
 
 // <--------------- Banner --------------------->
 
 section.banner {
-  padding-top: 150px;
+  padding-top: v50px;
   width: 90%;
   display: flex;
   flex-direction: column;
@@ -23,14 +16,14 @@ section.banner {
   z-index: 0;
   border-bottom: 1px solid $bgColor4;
 
-  div.carousel {
+  div.carousel-ban {
     display: none;
   }
 
   img.ban {
-    width: 500px;
+    width: 90%;
     height: 400px;
-    transform: rotate(-10deg);
+    // transform: rotate(-20deg);
   }
 }
 
@@ -48,7 +41,7 @@ section.banner {
     padding-top: 0px;
   }
 
-  div.carousel {
+  div.carousel-ban {
     display: block !important;
     width: 100%;
     height: 25rem;
@@ -66,7 +59,7 @@ section.banner {
 
   .carousel-img2 {
     width: 100%;
-    height: 700px;
+    height: 800px;
   }
 
   .carousel-control-prev,
