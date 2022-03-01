@@ -71,6 +71,12 @@ section.carousel {
 
   span {
     font-size: $textSize;
+    color: $bgColor4;
+  }
+
+  span:hover {
+    border-bottom: 1px solid;
+    margin-bottom: 5px;
   }
 
   span hr {
