@@ -153,4 +153,8 @@ section.about {
   main article h3 {
     font-size: $title;
   }
+
+  main section.carousel h3 {
+    font-size: $mainTitle;
+  }
 }

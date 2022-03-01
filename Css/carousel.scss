@@ -23,7 +23,7 @@ section.carousel {
   text-align: center;
   border-top: 1px solid $bgColor4;
 
-  h2 {
+  h3 {
     position: absolute;
     top: 10px;
     margin: 50px;
@@ -204,4 +204,59 @@ section.carousel {
   }
 }
 
+div.break-carousel {
+  display: none;
+}
+
 // <--------------- end SECTION Carousel--------------------->
+
+@media (min-width: 1200px) {
+  section.carousel {
+    height: 32em;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  section.carousel input,
+  section.carousel div.lbls,
+  section.carousel ul.bgs {
+    display: none;
+  }
+
+  section.carousel h3 {
+    padding-bottom: 20px;
+    border-bottom: 1px solid;
+  }
+
+  div.break-carousel {
+    display: flex;
+  }
+
+  .break-carousel ul {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 50px;
+  }
+
+  .break-carousel ul li {
+    margin: 0px 20px 0px 20px;
+  }
+
+  .break-carousel-img {
+    width: 200px;
+    height: 200px;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    border-radius: 20%;
+  }
+
+  .break-carousel-img:hover {
+    transform: scale(1.1);
+    color: $bgColor4;
+  }
+
+  div.icon-anchor5 {
+    margin-bottom: 20px;
+  }
+}
