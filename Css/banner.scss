@@ -15,7 +15,6 @@ $textColor2: #eeedde;
 // <--------------- Banner --------------------->
 
 section.banner {
-  position: relative;
   padding-top: 150px;
   width: 90%;
   display: flex;
@@ -29,32 +28,71 @@ section.banner {
   }
 
   img.ban {
-    width: 100%;
-    height: 80%;
+    width: 500px;
+    height: 400px;
     transform: rotate(-10deg);
   }
 }
 
 .inner-banner {
-  margin-bottom: 50px;
+  padding: 50px 0px 50px 0px;
 }
 
 /*<--------------- SCREEN MEDIUM SIZE ---------------------> */
 
 @media (min-width: 700px) {
-  img.ban {
-    display: none;
+  section.banner {
+    height: 50rem;
+    justify-content: flex-start;
+    justify-content: space-between;
+    padding-top: 0px;
   }
 
   div.carousel {
+    display: block !important;
     width: 100%;
-    height: 50rem;
-    background-color: $bgColor3;
+    height: 25rem;
   }
 
   div.carousel slide {
-    width: 90%;
-    height: 50rem;
+    width: 100%;
+    height: 100%;
+  }
+
+  .carousel-img {
+    width: 100%;
+    height: 600px;
+  }
+
+  .carousel-img2 {
+    width: 100%;
+    height: 700px;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    margin-top: 300px;
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-image: none;
+  }
+
+  .carousel-control-prev-icon:after {
+    content: "<";
+    font-size: 100px;
+    color: $bgColor4;
+  }
+
+  .carousel-control-next-icon:after {
+    content: ">";
+    font-size: 100px;
+    color: $bgColor4;
+  }
+
+  img.ban {
+    display: none;
   }
 }
 

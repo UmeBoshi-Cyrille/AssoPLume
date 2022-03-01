@@ -92,6 +92,14 @@ main {
     font-size: 1.5em;
   }
 }
+
+@media (min-width: 700px) {
+  h2.plume {
+    font-size: $titleKingSize;
+    font-style: italic;
+  }
+}
+
 // - end banner - //
 
 // - about - //
