@@ -104,13 +104,13 @@ main {
   }
 }
 
-.gallerie-inner-banner {
+.gallerie-inner-banner,
+.escales-inner-banner {
   text-align: center;
   h2 {
     font-size: $subTitle;
   }
 }
-
 // - end banner - //
 
 // - about - //
@@ -152,6 +152,15 @@ section.about {
   }
 }
 // - end Gallerie - //
+
+// - Escales - //
+article {
+  h2 {
+    font-size: $title;
+  }
+}
+
+// - end Escales - //
 
 // - carousel - //
 
