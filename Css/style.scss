@@ -1,7 +1,7 @@
 // Utilities
 $titleKingSize: 5em;
 $titleMediumSize: 3em;
-$mainTitle: 2em;
+$mainTitle: 2.5em;
 $title: 2em;
 $subTitle: 1.5em;
 $proverbeSize: 1.2em;
@@ -27,12 +27,6 @@ html {
     list-style: none;
     text-decoration: none;
     color: $textColor;
-  }
-
-  a:hover {
-    color: $textColor;
-    border-bottom: 1px solid;
-    padding-bottom: 3px;
   }
 
   h1 {
@@ -78,8 +72,8 @@ html {
     }
 
     img.arrow-orientation {
-      width: 40px;
-      height: 40px;
+      width: 20px;
+      height: 20px;
     }
   }
 }
@@ -194,22 +188,38 @@ footer span {
   header ul {
     font-size: $textSize;
   }
-}
 
-@media (min-width: 1200px) {
-  header ul {
-    font-size: $proverbeSize;
+  .gallerie-inner-banner h2 {
+    font-size: $mainTitle;
   }
 
-  main p {
-    font-size: $proverbeSize;
-  }
-
-  main article h3 {
+  .gallerie-title h2 {
     font-size: $title;
   }
 
-  main section.carousel h3 {
-    font-size: $mainTitle;
+  .gallerie-title a {
+    font-size: $proverbeSize;
+  }
+
+  .gallerie-title a:hover {
+    color: $textColor;
+  }
+
+  @media (min-width: 1200px) {
+    header ul {
+      font-size: $proverbeSize;
+    }
+
+    main p {
+      font-size: $proverbeSize;
+    }
+
+    main article h3 {
+      font-size: $title;
+    }
+
+    main section.carousel h3 {
+      font-size: $mainTitle;
+    }
   }
 }
