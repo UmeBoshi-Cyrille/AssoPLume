@@ -135,6 +135,7 @@ form div {
 form {
   display: block;
   width: 90%;
+  z-index: 0;
 }
 
 @media (min-width: 500px) {
