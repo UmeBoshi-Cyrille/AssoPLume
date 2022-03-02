@@ -21,7 +21,7 @@ header {
     height: 40px;
   }
 
-  div.img-anchor {
+  .img-anchor {
     display: none;
   }
 
@@ -39,14 +39,14 @@ input#menu {
 }
 
 .iconNav {
-  background: $bgColor1;
-  box-shadow: 1px 1px 6px $bgColor4;
-  border-radius: 5px;
-  cursor: pointer;
   display: block;
   height: 20px;
   width: 20px;
   padding: 16px;
+  background: $bgColor1;
+  box-shadow: 1px 1px 6px $bgColor4;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 label.iconNav {
@@ -155,8 +155,8 @@ header nav {
     height: 75px;
   }
 
-  .img-anchor {
-    display: inline !important;
+  div.img-anchor {
+    display: inline-flex;
     margin-left: 20px;
     margin-top: 5px;
   }
@@ -166,30 +166,29 @@ header nav {
     height: 40px;
   }
 
-  div.icon-anchor {
+  div.icon-anchor,
+  .iconNav {
     display: none;
   }
 
-  .iconNav {
-    display: none;
+  header nav,
+  header ul {
+    display: flex;
+    justify-content: flex-end;
   }
 
   header nav {
     position: absolute;
     right: 20px;
-    display: flex;
-    justify-content: flex-end;
     width: 60%;
     height: fit-content;
     overflow: visible;
-    // border: 1px solid;
 
     ul {
-      display: flex;
       flex-direction: row;
-      justify-content: flex-end;
       margin-right: 5%;
       margin-bottom: 2px;
+      margin-top: 20px;
     }
 
     li {
@@ -212,22 +211,23 @@ header nav {
     height: 100px;
   }
 
-  .arrow-feather {
-    width: 70px !important;
-    height: 70px !important;
+  img.arrow-feather {
+    width: 70px;
+    height: 70px;
   }
 
-  div.icon-anchor {
-    display: none;
-  }
-
+  div.icon-anchor,
   .iconNav {
     display: none;
   }
 
+  header nav,
+  header ul {
+    display: flex;
+  }
+
   header nav {
     position: absolute;
-    display: flex;
     justify-content: flex-end;
     align-items: flex-end;
     width: 60%;
@@ -236,7 +236,6 @@ header nav {
     overflow: visible;
 
     ul {
-      display: flex;
       flex-direction: row;
       align-items: flex-end;
       height: fit-content;

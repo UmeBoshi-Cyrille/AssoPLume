@@ -8,23 +8,22 @@ $bgColor4: #141e27;
 // <--------------- Banner --------------------->
 
 section.banner {
-  padding-top: 50px;
-  width: 90%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  z-index: 0;
+  padding-top: 50px;
+  width: 90%;
   border-bottom: 1px solid $bgColor4;
-
-  div.carousel-ban {
-    display: none;
-  }
+  z-index: 0;
 
   img.ban {
     width: 90%;
     height: 400px;
-    // transform: rotate(-20deg);
   }
+}
+
+.carousel-ban {
+  display: none;
 }
 
 .inner-banner {
@@ -41,30 +40,33 @@ section.banner {
     padding-top: 0px;
   }
 
-  div.carousel-ban {
-    display: block !important;
+  div.carousel-ban,
+  div.carousel-slide,
+  .carousel-img,
+  .carousel-img2 {
     width: 100%;
+  }
+
+  div.carousel-ban {
+    display: block;
     height: 25rem;
   }
 
-  div.carousel slide {
-    width: 100%;
+  div.carousel-slide {
     height: 100%;
   }
 
   .carousel-img {
-    width: 100%;
     height: 600px;
   }
 
   .carousel-img2 {
-    width: 100%;
     height: 800px;
   }
 
   .carousel-control-prev,
   .carousel-control-next {
-    margin-top: 300px;
+    margin-top: 15%;
   }
 
   .carousel-control-prev-icon,
@@ -90,10 +92,3 @@ section.banner {
 }
 
 //<--------------- end SCREEN MEDIUM SIZE ---------------------> //
-
-// <--------------- SCREEN BIG SIZE --------------------->
-
-@media (min-width: 1200px) {
-}
-
-// <--------------- end SCREEN BIG SIZE --------------------->

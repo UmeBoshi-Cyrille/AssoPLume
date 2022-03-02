@@ -29,34 +29,18 @@ html {
     color: $textColor;
   }
 
+  a:hover {
+    color: $textColor;
+    border-bottom: 1px solid;
+    padding-bottom: 3px;
+  }
+
   h1 {
-    font-size: $mainTitle;
-  }
-
-  @media (min-width: 700px) {
-    h1 {
-      font-size: $titleMediumSize;
-    }
-  }
-
-  @media (min-width: 1200px) {
-    h1 {
-      font-size: $titleKingSize;
-    }
-  }
-
-  h2 {
     font-size: $mainTitle;
   }
 
   h3 {
     font-size: $subTitle;
-    font-weight: bold;
-    line-height: 40px;
-  }
-
-  p {
-    font-size: $smallTextSize;
   }
 
   img.arrow-orientation {
@@ -64,7 +48,35 @@ html {
     height: 30px;
   }
 
+  @media (min-width: 700px) {
+    h1 {
+      font-size: $titleMediumSize;
+    }
+
+    h3 {
+      font-size: $title;
+    }
+  }
+
   @media (min-width: 1200px) {
+    h1 {
+      font-size: $titleKingSize;
+    }
+
+    h2 {
+      font-size: $mainTitle;
+    }
+
+    h3 {
+      font-size: $subTitle;
+      font-weight: bold;
+      line-height: 40px;
+    }
+
+    p {
+      font-size: $smallTextSize;
+    }
+
     img.arrow-orientation {
       width: 40px;
       height: 40px;
@@ -88,9 +100,20 @@ main {
 // - banner - //
 
 .inner-banner {
+  h2 {
+    font-size: $titleMediumSize;
+  }
+
   p {
     line-height: 50px;
     font-size: 1.5em;
+  }
+}
+
+.gallerie-inner-banner {
+  text-align: center;
+  h2 {
+    font-size: $subTitle;
   }
 }
 
@@ -128,9 +151,37 @@ section.about {
 }
 // - end about - //
 
+// - Gallerie - //
+.gallerie-title {
+  h2 {
+    font-size: $proverbeSize;
+  }
+}
+// - end Gallerie - //
+
+// - carousel - //
+
+section.carousel {
+  text-align: center;
+
+  span {
+    font-size: $proverbeSize;
+  }
+
+  ul {
+    line-height: 25px;
+  }
+}
+
+// - end carousel - //
+
 /* -------- end MAIN --------*/
 
 /* -------- FOOTER --------*/
+
+footer span {
+  text-align: center;
+}
 
 /* -------- end FOOTER --------*/
 

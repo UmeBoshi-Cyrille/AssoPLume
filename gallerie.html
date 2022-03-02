@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="./Css/style.css">
     <link rel="stylesheet" href="./Css/header.css">
     <link rel="stylesheet" href="./Css/banner.css">
-    <link rel="stylesheet" href="./Css/main.css">
+    <link rel="stylesheet" href="./Css/main-gallerie.css">
     <link rel="stylesheet" href="./Css/carousel.css">
     <link rel="stylesheet" href="./Css/footer.css">
 </head>
@@ -48,7 +48,7 @@
                 <li><a href="index.html">Accueil</a></li>
                 <li><a href="gallerie.html">Gallerie</a></li>
                 <li><a href="escales.html">Escales</a></li>
-                <li><a href="#">à propos</a></li>
+                <li><a href="#footer">à propos</a></li>
                 <li><a href="#">Attributions</a></li>
             </ul>
             <hr>
@@ -58,29 +58,239 @@
 
     <main>
         <!-- banner -->
-        <section class="container-fluid banner">
-            <div class="inner-banner">
-                <h2 class="plume" id="plume">Au <strong>Menu des Proverbes</strong></h2>
-                <p>Choisissez parmi les thèmes qui suivent</p>
+        <section class="container-fluid gallerie-banner">
+            <div class="gallerie-inner-banner">
+                <h2 class="menu" id="plume">Au <strong>Menu des Proverbes</strong></h2>
+                <!-- <img src="./img/etoiles.png" alt="contemplation des étoiles"> -->
             </div>
         </section>
         <!-- end banner -->
 
-        <!-- About -->
+        <!-- gallerie -->
         <section class="container-fluid">
             <div class="container">
-                <div class="row">
-                    <h2>...</h2>
-                    <article class="col-md-4 col-lg-4 col-xs-12 col-sm-12">
-
-                    </article>
-                    <article class="col-md-4 col-lg-4 col-xs-12 col-sm-12">
-
+                <div class="row gal-wrap">
+                    <div class="gallerie-title">
+                        <h2>Choisissez parmi les thèmes suivant :</h2>
+                        <ul>
+                            <li class="color1"><a href="#sagesse">Sagesse</a></li>
+                            <li class="color2"><a href="#couple">Couple</a></li>
+                            <li class="color3"><a href="#famille">Famille</a></li>
+                            <li class="color4"><a href="#relation">Relations</a></li>
+                            <li class="color1"><a href="#emploi">Emploi</a></li>
+                        </ul>
+                        <img src="./icons/north.png" alt="icon-arrow" class="icon-arrow">
+                    </div>
+                    <hr>
+                    <img src="./img/etoiles.png" alt="contemplation des étoiles">
+                    <hr>
+                    <article class="col-md-4 col-lg-4 col-xs-12 col-sm-12 article-contain">
+                        <div class="learnBox">
+                            <div>
+                                <h3 id="sagesse">Sagesse</h3>
+                                <hr>
+                                <p class="proverbe">"La conduite du <strong>stupide</strong> est droite à ses yeux; le
+                                    <strong>sage</strong>, lui, écoute les <strong>conseils</strong>."
+                                </p>
+                                <div class="Explications">
+                                    <h4>Explications</h4>
+                                    <p> ... </p>
+                                </div>
+                            </div>
+                            <hr>
+                            <div>
+                                <p class="proverbe">"Grâce à la sagesse tes jours seront nombreux, et des années
+                                    seront ajoutées à ta vie."
+                                </p>
+                                <div class="Explications">
+                                    <h4>Explications</h4>
+                                    <p> ... </p>
+                                </div>
+                            </div>
+                            <hr>
+                            <div>
+                                <p class="proverbe">"Grâce à la sagesse, l’homme prudent discerne le chemin qu’il
+                                    emprunte, mais les stupides sont trompés par leur bêtise."
+                                </p>
+                                <div class="Explications">
+                                    <h4>Explications</h4>
+                                    <p> ... </p>
+                                </div>
+                            </div>
+                            <hr>
+                            <div>
+                                <p class="proverbe">"Obtenir la sagesse vaut mieux que d’obtenir de l’argent, et l’avoir
+                                    comme bénéfice vaut mieux que d’avoir de l’or."
+                                </p>
+                                <div class="Explications">
+                                    <h4>Explications</h4>
+                                    <p> ... </p>
+                                </div>
+                            </div>
+                            <hr>
+                            <div>
+                                <p class="proverbe">"As-tu vu un homme qui se croit sage? Il y a plus d’espoir pour une
+                                    personne stupide que pour lui."
+                                </p>
+                                <div class="Explications">
+                                    <h4>Explications</h4>
+                                    <p> ... </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="learnBox">
+                            <div>
+                                <hr>
+                                <h3 id="couple">Couple</h3>
+                                <hr>
+                                <p class="proverbe">"De même, les maris doivent aimer leurs femmes comme leurs propres
+                                    corps. Un homme qui aime sa femme s’aime lui-même,"
+                                </p>
+                                <div class="Explications">
+                                    <h4>Explications</h4>
+                                    <p> ... </p>
+                                </div>
+                            </div>
+                            <hr>
+                            <div>
+                                <p class="proverbe">"Des paroles irréfléchies sont comme des coups d’épée, alors que la
+                                    langue des sages apporte la guérison."
+                                </p>
+                                <div class="Explications">
+                                    <h4>Explications</h4>
+                                    <p> ... </p>
+                                </div>
+                            </div>
+                            <hr>
+                            <div>
+                                <p class="proverbe">"Celui qui fait confiance à son cœur est stupide, mais celui qui se
+                                    comporte avec sagesse échappera au malheur."
+                                </p>
+                                <div class="Explications">
+                                    <h4>Explications</h4>
+                                    <p> ... </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="learnBox">
+                            <div>
+                                <hr>
+                                <h3 id="famille">Famille</h3>
+                                <hr>
+                                <p class="proverbe">"C’est grâce à la sagesse que l’on construit une maison, et c’est
+                                    grâce au discernement qu’on la rend sûre."
+                                </p>
+                                <div class="Explications">
+                                    <h4>Explications</h4>
+                                    <p> ... </p>
+                                </div>
+                            </div>
+                            <hr>
+                            <div>
+                                <p class="proverbe">"C’est grâce à la sagesse que l’on construit une maison, et c’est
+                                    grâce au discernement qu’on la rend sûre."
+                                </p>
+                                <div class="Explications">
+                                    <h4>Explications</h4>
+                                    <p> ... </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="learnBox">
+                            <hr>
+                            <h3 id="relation">Relations</h3>
+                            <hr>
+                            <div>
+                                <p class="proverbe">"Ne te vexe pas pour un rien, car la susceptibilité loge chez les
+                                    stupides."
+                                </p>
+                                <div class="Explications">
+                                    <h4>Explications</h4>
+                                    <p> ... </p>
+                                </div>
+                            </div>
+                            <hr>
+                            <div>
+                                <p class="proverbe">"Pour le stupide, avoir une conduite honteuse est comme un jeu, mais
+                                    la sagesse est pour l’homme qui a du discernement."
+                                </p>
+                                <div class="Explications">
+                                    <h4>Explications</h4>
+                                    <p> ... </p>
+                                </div>
+                            </div>
+                            <hr>
+                            <div>
+                                <p class="proverbe">"Le stupide montre immédiatement son agacement; l’homme astucieux,
+                                    lui, ne tient pas compte de l’insulte."
+                                </p>
+                                <div class="Explications">
+                                    <h4>Explications</h4>
+                                    <p> ... </p>
+                                </div>
+                            </div>
+                            <hr>
+                            <div>
+                                <p class="proverbe">"Une bonne réputation est préférable à une grande richesse; être
+                                    respecté vaut mieux que l’argent et l’or."
+                                </p>
+                                <div class="Explications">
+                                    <h4>Explications</h4>
+                                    <p> ... </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="learnBox">
+                            <hr>
+                            <h3 id="emploi">Emploi</h3>
+                            <hr>
+                            <div>
+                                <p class="proverbe">"Tout travail soutenu procure des bienfaits, mais l’homme qui se
+                                    contente de parler finira démuni."
+                                </p>
+                                <div class="Explications">
+                                    <h4>Explications</h4>
+                                    <p> ... </p>
+                                </div>
+                            </div>
+                            <hr>
+                            <div>
+                                <p class="proverbe">"La sagesse est une protection tout comme l’argent est une
+                                    protection, mais voici l’avantage de la connaissance: la sagesse préserve la vie de
+                                    celui qui la possède."
+                                </p>
+                                <div class="Explications">
+                                    <h4>Explications</h4>
+                                    <p> ... </p>
+                                </div>
+                            </div>
+                            <hr>
+                            <div>
+                                <p class="proverbe">"Celui qui a du discernement ne perd pas de vue la sagesse; le
+                                    stupide, lui, laisse errer son regard jusqu’au bout du monde."
+                                </p>
+                                <div class="Explications">
+                                    <h4>Explications</h4>
+                                    <p> ... </p>
+                                </div>
+                            </div>
+                            <hr>
+                            <div>
+                                <p class="proverbe">"Il existe un chemin que l’homme s’imagine être le bon, mais
+                                    finalement, c’est à la mort qu’il mène."
+                                </p>
+                                <div class="Explications">
+                                    <h4>Explications</h4>
+                                    <p> ... </p>
+                                </div>
+                            </div>
+                            <hr>
+                        </div>
                     </article>
                 </div>
             </div>
         </section>
-        <!-- end About -->
+        <!-- end gallerie -->
 
         <!-- Carousel -->
         <section class="carousel">
@@ -141,11 +351,11 @@
     </main>
 
     <footer class="container-fluid">
-        <div class="footer-contain">
+        <div class="footer-contain" id="footer">
             <div class="footer-box">
                 <hr>
                 <div>
-                    <img src="./img/icons8-feather-60.png" alt="">
+                    <img src="./icons/icons8-feather-60.png" alt="feather icon">
                     <h4>Site</h4>
                 </div>
                 <hr>
@@ -160,7 +370,7 @@
             <div class="footer-box">
                 <hr>
                 <div>
-                    <img src="./img/icons8-livres-100.png" alt="">
+                    <img src="./icons/icons8-livres-100.png" alt="books icon">
                     <h4>Proverbes</h4>
                 </div>
                 <hr>

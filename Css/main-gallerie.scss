@@ -1,0 +1,185 @@
+// Color
+$bgColor1: #eeedde;
+$bgColor2: #e0ddaa;
+$bgColor3: #203239;
+$bgColor4: #141e27;
+// End color
+
+// <--------------- MAIN --------------------->
+
+main,
+.gallerie-inner-banner,
+.article-contain,
+.learnBox {
+  display: flex;
+
+  div.icon-anchor5 {
+    position: absolute;
+    right: auto;
+    left: auto;
+    bottom: 10px;
+    margin-top: 75px;
+    width: 30px;
+    height: 30px;
+    z-index: 1;
+  }
+}
+
+main {
+  flex-direction: column;
+  height: auto;
+}
+
+/* --- Banner --- */
+.gallerie-banner {
+  background-image: url(../img/cieletoile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 50vh;
+}
+
+.gallerie-inner-banner {
+  position: relative;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+
+  h2 {
+    position: absolute;
+    top: 300px;
+    align-self: flex-end;
+    color: $bgColor1;
+  }
+}
+
+/* --- end Banner --- */
+
+.container-fluid {
+  //   border: 1px solid;
+  padding-bottom: 50px;
+}
+
+.gallerie-title,
+.learnBox {
+  text-align: center;
+}
+
+.gallerie-title {
+  width: 100%;
+  margin-top: 20px;
+
+  h2 {
+    padding: 20px;
+    border-bottom: 1px solid;
+  }
+
+  ul {
+    padding: 20px;
+    line-height: 50px;
+  }
+
+  .color1,
+  .color3 {
+    background-color: $bgColor4;
+  }
+
+  .color1 a,
+  .color3 a {
+    color: #eeedde;
+  }
+
+  .color2,
+  .color4 {
+    background-color: $bgColor3;
+  }
+
+  .color2 a,
+  .color3 a,
+  .color4 a {
+    color: $bgColor1;
+  }
+
+  .color1:hover,
+  .color2:hover,
+  .color3:hover,
+  .color4:hover {
+    width: 100%;
+    box-shadow: 1px 1px 6px $bgColor3;
+  }
+
+  .color1:hover,
+  .color3:hover {
+    background-color: $bgColor1;
+  }
+
+  .color1 a:hover,
+  .color3 a:hover {
+    color: $bgColor4;
+  }
+
+  .color2:hover,
+  .color4:hover {
+    background-color: $bgColor2;
+  }
+
+  .color2 a:hover,
+  .color4 a:hover {
+    color: $bgColor4;
+  }
+
+  .icon-arrow {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+/* ----- article ----- */
+
+.article-contain {
+  flex-direction: column;
+  width: 100%;
+}
+
+.learnBox {
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+
+  h3,
+  h4,
+  p {
+    padding: 20px;
+  }
+
+  h4 {
+    background-color: $bgColor4;
+    color: $bgColor1;
+  }
+
+  p,
+  .Explications {
+    background-color: $bgColor3;
+    color: $bgColor1;
+  }
+
+  .proverbe {
+    background-color: $bgColor2;
+    color: $bgColor4;
+  }
+
+  .Explications {
+    height: 50px;
+    overflow: hidden;
+  }
+
+  .Explications:hover {
+    height: 15vh;
+    overflow: visible;
+  }
+}
+
+/* ----- end article ----- */
+
+// <--------------- end MAIN --------------------->

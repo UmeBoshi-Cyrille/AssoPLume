@@ -10,22 +10,31 @@ $bgColor4: #141e27;
 main {
   display: flex;
   flex-direction: column;
+  align-content: center;
+
+  section {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+
+  div.icon-anchor2,
+  div.icon-anchor3,
+  div.icon-anchor4,
+  div.icon-anchor5 {
+    width: 30px;
+    height: 30px;
+  }
 
   div.icon-anchor2 {
     position: absolute;
     top: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 30px;
-    height: 30px;
     margin-top: 20px;
     z-index: 1;
   }
 
   div.icon-anchor3 {
     position: absolute;
-    width: 30px;
-    height: 30px;
     right: 50%;
     left: 47%;
     z-index: 1;
@@ -35,8 +44,6 @@ main {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
-    width: 30px;
-    height: 30px;
     z-index: 1;
   }
 
@@ -44,16 +51,10 @@ main {
     position: absolute;
     right: auto;
     left: auto;
-    margin-top: 75px;
     bottom: 10px;
-    width: 30px;
-    height: 30px;
+    margin-top: 75px;
     z-index: 1;
   }
-}
-
-section {
-  display: flex;
 }
 
 // <--------------- end Sharing SECTION --------------------->
@@ -64,6 +65,8 @@ section.about {
   position: relative;
   padding-top: 150px;
   margin-bottom: 50px;
+  margin-left: 10px;
+  align-items: center;
 
   h2 {
     position: absolute;
@@ -72,6 +75,7 @@ section.about {
   }
 
   .about-title {
+    align-items: center;
     margin: 10px 0px 10px 0px;
     padding-bottom: 10px;
     line-height: 30px;
@@ -84,7 +88,7 @@ section.about {
 }
 
 div.aboutInfo {
-  // display: wrap;
+  width: 100%;
   justify-content: center;
 
   article {
@@ -110,7 +114,6 @@ div.aboutInfo {
     position: relative;
     display: flex;
     justify-content: center;
-    padding: 0px 0px 0px 0px;
   }
 
   .imgDecoration {
@@ -118,24 +121,13 @@ div.aboutInfo {
   }
 }
 
-.iconImg {
-  width: 200px;
-  height: 200px;
-}
-
+.iconImg,
 .text-img {
   width: 200px;
   height: 200px;
 }
 
 // <--------------- end SECTION About--------------------->
-
-/*<--------------- SCREEN MEDIUM SIZE ---------------------> */
-
-@media (min-width: 700px) {
-}
-
-//<--------------- end SCREEN MEDIUM SIZE ---------------------> //
 
 // <--------------- SCREEN BIG SIZE --------------------->
 
@@ -149,17 +141,17 @@ div.aboutInfo {
     border-top: 1px solid;
     border-bottom: 1px solid;
     border-radius: 20%;
-    margin-left: 50px;
-    margin-right: 50px;
   }
 
-  .about-article:hover {
-    transform: scale(1.1);
-    background-color: $bgColor1;
-    box-shadow: 1px 1px 6px $bgColor4;
-    z-index: 1;
+  .about-article {
+    margin-right: 30px;
   }
 
+  .invitation-article {
+    margin-left: 30px;
+  }
+
+  .about-article:hover,
   .invitation-article:hover {
     transform: scale(1.1);
     background-color: $bgColor1;
@@ -167,7 +159,8 @@ div.aboutInfo {
     z-index: 1;
   }
 
-  hr.under-nest {
+  hr.under-nest,
+  div.icon-anchor3 {
     display: none;
   }
 
@@ -193,10 +186,6 @@ div.aboutInfo {
 
   .text-img:hover {
     transform: translate(50px);
-  }
-
-  div.icon-anchor3 {
-    display: none;
   }
 }
 

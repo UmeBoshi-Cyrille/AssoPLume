@@ -11,68 +11,70 @@ $textColor2: #eeedde;
 // End color
 
 // <--------------- SECTION Carousel--------------------->
-section.carousel {
-  position: relative;
+section.carousel,
+ul.bgs {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+section.carousel {
+  position: relative;
   flex-direction: column;
   margin-bottom: 50px;
   padding-bottom: 100px;
   height: 40em;
-  text-align: center;
   border-top: 1px solid $bgColor4;
 
-  h3 {
+  h3,
+  div.lbls label,
+  div.lbls label.labelAnterior,
+  div.lbls label.labelProxima,
+  ul.bgs li {
     position: absolute;
+  }
+
+  h3 {
     top: 10px;
     margin: 50px;
   }
 
-  input {
+  input,
+  div.lbls label,
+  ul.bgs li {
     display: none;
   }
 
   div.lbls label {
-    position: absolute;
-    display: none;
     top: 60%;
   }
 
-  div.lbls label.labelAnterior {
-    content: "";
-    font-size: 25px;
-    position: absolute;
-    left: 5vw;
-    z-index: 1;
-  }
-
+  div.lbls label.labelAnterior,
   div.lbls label.labelProxima {
     content: "";
     font-size: 25px;
-    position: absolute;
-    right: 5vw;
     z-index: 1;
+  }
+
+  div.lbls label.labelAnterior {
+    left: 5vw;
+  }
+
+  div.lbls label.labelProxima {
+    right: 5vw;
   }
 
   ul.bgs {
     list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 
   ul.bgs li {
     top: 35%;
     width: 250px;
     height: 350px;
-    float: left;
-    position: absolute;
-    display: none;
   }
 
   span {
-    font-size: $textSize;
     color: $bgColor4;
   }
 
@@ -86,146 +88,86 @@ section.carousel {
     width: 50px;
   }
 
-  ul.bgs li:nth-of-type(1) {
-    background-image: url(../img/harvest.png);
+  ul.bgs li:nth-of-type(1),
+  ul.bgs li:nth-of-type(2),
+  ul.bgs li:nth-of-type(3),
+  ul.bgs li:nth-of-type(4),
+  ul.bgs li:nth-of-type(5) {
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
   }
+
+  ul.bgs li:nth-of-type(1) {
+    background-image: url(../img/harvest.png);
+  }
   ul.bgs li:nth-of-type(2) {
     background-image: url(../img/nest2.png);
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
   }
 
   ul.bgs li:nth-of-type(3) {
     background-image: url(../img/birdMessenger.png);
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
   }
 
   ul.bgs li:nth-of-type(4) {
     background-image: url(../img/birdALittleHistory.png);
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
   }
 
   ul.bgs li:nth-of-type(5) {
     background-image: url(../img/nest.png);
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
   }
 
-  #inp01Alpha:checked ~ ul.bgs li.bg01 {
-    display: block;
-  }
-  #inp01Alpha:checked ~ div.lbls label.lbl02 {
-    display: block;
-  }
-  #inp01Alpha:checked ~ div.lbls label.lbl10 {
-    display: block;
-  }
-  #inp02Alpha:checked ~ ul.bgs li.bg02 {
-    display: block;
-  }
-  #inp02Alpha:checked ~ div.lbls label.lbl03 {
-    display: block;
-  }
-  #inp02Alpha:checked ~ div.lbls label.lbl06 {
-    display: block;
-  }
-  #inp03Alpha:checked ~ ul.bgs li.bg03 {
-    display: block;
-  }
-  #inp03Alpha:checked ~ div.lbls label.lbl04 {
-    display: block;
-  }
-  #inp03Alpha:checked ~ div.lbls label.lbl07 {
-    display: block;
-  }
-  #inp04Alpha:checked ~ ul.bgs li.bg04 {
-    display: block;
-  }
-  #inp04Alpha:checked ~ div.lbls label.lbl05 {
-    display: block;
-  }
-  #inp04Alpha:checked ~ div.lbls label.lbl08 {
-    display: block;
-  }
-  #inp05Alpha:checked ~ ul.bgs li.bg05 {
-    display: block;
-  }
-  #inp05Alpha:checked ~ div.lbls label.lbl01 {
-    display: block;
-  }
-  #inp05Alpha:checked ~ div.lbls label.lbl09 {
-    display: block;
-  }
-  #inp06Alpha:checked ~ ul.bgs li.bg01 {
-    display: block;
-  }
-  #inp06Alpha:checked ~ div.lbls label.lbl02 {
-    display: block;
-  }
-  #inp06Alpha:checked ~ div.lbls label.lbl10 {
-    display: block;
-  }
-  #inp07Alpha:checked ~ ul.bgs li.bg02 {
-    display: block;
-  }
-  #inp07Alpha:checked ~ div.lbls label.lbl03 {
-    display: block;
-  }
-  #inp08Alpha:checked ~ div.lbls label.lbl06 {
-    display: block;
-  }
-  #inp08Alpha:checked ~ ul.bgs li.bg03 {
-    display: block;
-  }
-  #inp08Alpha:checked ~ div.lbls label.lbl04 {
-    display: block;
-  }
-  #inp08Alpha:checked ~ div.lbls label.lbl07 {
-    display: block;
-  }
-  #inp09Alpha:checked ~ ul.bgs li.bg04 {
-    display: block;
-  }
-  #inp09Alpha:checked ~ div.lbls label.lbl05 {
-    display: block;
-  }
-  #inp09Alpha:checked ~ div.lbls label.lbl08 {
-    display: block;
-  }
-  #inp10Alpha:checked ~ ul.bgs li.bg05 {
-    display: block;
-  }
-  #inp10Alpha:checked ~ div.lbls label.lbl01 {
-    display: block;
-  }
+  #inp01Alpha:checked ~ ul.bgs li.bg01,
+  #inp01Alpha:checked ~ div.lbls label.lbl02,
+  #inp01Alpha:checked ~ div.lbls label.lbl10,
+  #inp02Alpha:checked ~ ul.bgs li.bg02,
+  #inp02Alpha:checked ~ div.lbls label.lbl03,
+  #inp02Alpha:checked ~ div.lbls label.lbl06,
+  #inp03Alpha:checked ~ ul.bgs li.bg03,
+  #inp03Alpha:checked ~ div.lbls label.lbl04,
+  #inp03Alpha:checked ~ div.lbls label.lbl07,
+  #inp04Alpha:checked ~ ul.bgs li.bg04,
+  #inp04Alpha:checked ~ div.lbls label.lbl05,
+  #inp04Alpha:checked ~ div.lbls label.lbl08,
+  #inp05Alpha:checked ~ ul.bgs li.bg05,
+  #inp05Alpha:checked ~ div.lbls label.lbl01,
+  #inp05Alpha:checked ~ div.lbls label.lbl09,
+  #inp06Alpha:checked ~ ul.bgs li.bg01,
+  #inp06Alpha:checked ~ div.lbls label.lbl02,
+  #inp06Alpha:checked ~ div.lbls label.lbl10,
+  #inp07Alpha:checked ~ ul.bgs li.bg02,
+  #inp07Alpha:checked ~ div.lbls label.lbl03,
+  #inp08Alpha:checked ~ div.lbls label.lbl06,
+  #inp08Alpha:checked ~ ul.bgs li.bg03,
+  #inp08Alpha:checked ~ div.lbls label.lbl04,
+  #inp08Alpha:checked ~ div.lbls label.lbl07,
+  #inp09Alpha:checked ~ ul.bgs li.bg04,
+  #inp09Alpha:checked ~ div.lbls label.lbl05,
+  #inp09Alpha:checked ~ div.lbls label.lbl08,
+  #inp10Alpha:checked ~ ul.bgs li.bg05,
+  #inp10Alpha:checked ~ div.lbls label.lbl01,
   #inp10Alpha:checked ~ div.lbls label.lbl09 {
     display: block;
   }
 }
 
-div.break-carousel {
+.break-carousel {
   display: none;
 }
 
 // <--------------- end SECTION Carousel--------------------->
 
 @media (min-width: 700px) {
-  div.lbls label.labelAnterior {
+  div.lbls label.labelAnterior,
+  div.lbls label.labelProxima {
     font-size: 50px;
+  }
+
+  div.lbls label.labelAnterior {
     left: 35vw;
   }
 
   div.lbls label.labelProxima {
-    font-size: 50px;
     right: 50vw;
   }
 }
@@ -248,12 +190,12 @@ div.break-carousel {
     border-bottom: 1px solid;
   }
 
-  div.break-carousel {
+  div.break-carousel,
+  .break-carousel ul {
     display: flex;
   }
 
   .break-carousel ul {
-    display: flex;
     justify-content: center;
     align-content: center;
     margin-top: 50px;
