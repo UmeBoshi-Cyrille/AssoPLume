@@ -73,6 +73,9 @@ article {
   flex-wrap: wrap;
   padding-top: 30px;
   padding-bottom: 70px;
+  border-top: 1px solid;
+  border-left: 1px solid;
+  border-radius: 0% 20% 0% 0%;
   border-bottom: 1px dashed;
   background-color: $bgColor1;
 
@@ -116,7 +119,7 @@ form div {
     // border: 1px solid;
   }
 
-  input {
+  label {
     margin-top: 20px;
   }
 

@@ -175,7 +175,7 @@
         </section>
         <!-- end escales -->
         <div class="separate-box sep-box2"></div>
-        <div class="direction"><img src="./icons/boussole.png" alt="boussole"></div>
+        <div class="direction"><img src="./icons/east.png" alt="boussole"></div>
         <div class="separate-box sep-box2"></div>
         <section class="container-fluid escales-wrapper">
             <div class="container">
@@ -184,12 +184,16 @@
                     <div class="span6">
                         <form id="form">
                             <div class="controls controls-row">
-                                <input id="name" name="name" type="text" class="span3" placeholder="Name">
-                                <input id="email" name="email" type="email" class="span3" placeholder="Email address">
+                                <label for="name">Nom</label>
+                                <input id="name" name="name" type="text" class="span3" placeholder="Name" required>
+                                <label for="email">Email</label>
+                                <input id="email" name="email" type="email" class="span3" placeholder="Email address"
+                                    required>
                             </div>
                             <div class="controls">
-                                <textarea id="message" name="message" class="span6" placeholder="Your Message"
-                                    rows="5"></textarea>
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" class="span6" placeholder="Your Message" rows="5"
+                                    required></textarea>
                             </div>
 
                             <div class="controls">
@@ -202,7 +206,7 @@
             </div>
         </section>
         <div class="separate-box sep-box2"></div>
-        <div class="direction"><img src="./icons/boussole.png" alt="boussole"></div>
+        <div class="direction"><img src="./icons/west.png" alt="boussole"></div>
         <!-- Carousel -->
         <section class="carousel">
             <h3 id="gallerie">Visitez notre gallerie</h3>
