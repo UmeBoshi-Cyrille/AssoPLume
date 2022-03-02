@@ -9,7 +9,8 @@ main,
 section.escales-wrapper,
 article,
 .escales-inner-banner,
-div.direction {
+div.direction,
+div.span6 {
   display: flex;
 }
 
@@ -99,8 +100,50 @@ div.direction {
   padding-bottom: 20px;
 }
 
+div.span6,
+form div {
+  justify-content: center;
+
+  form div,
+  textarea {
+    width: 100%;
+  }
+
+  form div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    // border: 1px solid;
+  }
+
+  input {
+    margin-top: 20px;
+  }
+
+  textarea {
+    height: 150px;
+  }
+
+  button {
+    background-color: $bgColor4;
+  }
+}
+
+form {
+  display: block;
+  width: 90%;
+}
+
 @media (min-width: 500px) {
   article img {
-    width: 40%;
+    width: 50%;
+  }
+
+  form {
+    width: 60%;
+  }
+
+  textarea {
+    height: 200px;
   }
 }
